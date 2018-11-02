@@ -51,6 +51,9 @@
 		5E5A8E58218C250B006DDA24 /* FactoryPatternExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoryPatternExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5A8E5C218C250B006DDA24 /* FactoryPatternExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactoryPatternExampleUITests.m; sourceTree = "<group>"; };
 		5E5A8E5E218C250B006DDA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E5A8E6A218C3F0C006DDA24 /* CalculstotFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculstotFactory.h; sourceTree = "<group>"; };
+		5E5A8E6B218C3F6A006DDA24 /* Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Add.h; sourceTree = "<group>"; };
+		5E5A8E6C218C3FF7006DDA24 /* Sub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sub.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,9 @@
 				5E5A8E43218C250B006DDA24 /* LaunchScreen.storyboard */,
 				5E5A8E46218C250B006DDA24 /* Info.plist */,
 				5E5A8E47218C250B006DDA24 /* main.m */,
+				5E5A8E6A218C3F0C006DDA24 /* CalculstotFactory.h */,
+				5E5A8E6B218C3F6A006DDA24 /* Add.h */,
+				5E5A8E6C218C3FF7006DDA24 /* Sub.h */,
 			);
 			path = FactoryPatternExample;
 			sourceTree = "<group>";
