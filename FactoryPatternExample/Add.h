@@ -6,6 +6,6 @@
 //  Copyright © 2018年 TianYan_AppTeam_TBL. All rights reserved.
 //
 #import "CalculatorFactory.h"
-@interface Add:Calculator
+@interface Add:CalculatorFactory
 -(int)getResult:(int)x:(int)y;
 @end

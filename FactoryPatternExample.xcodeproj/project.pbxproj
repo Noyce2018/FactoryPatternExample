@@ -15,6 +15,9 @@
 		5E5A8E48218C250B006DDA24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A8E47218C250B006DDA24 /* main.m */; };
 		5E5A8E52218C250B006DDA24 /* FactoryPatternExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A8E51218C250B006DDA24 /* FactoryPatternExampleTests.m */; };
 		5E5A8E5D218C250B006DDA24 /* FactoryPatternExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A8E5C218C250B006DDA24 /* FactoryPatternExampleUITests.m */; };
+		5E5A8E6E218C4193006DDA24 /* calculatorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A8E6D218C4193006DDA24 /* calculatorFactory.m */; };
+		5E5A8E71218C4397006DDA24 /* Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A8E70218C4397006DDA24 /* Add.m */; };
+		5E5A8E73218C43CA006DDA24 /* Sub.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A8E72218C43CA006DDA24 /* Sub.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +54,12 @@
 		5E5A8E58218C250B006DDA24 /* FactoryPatternExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoryPatternExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5A8E5C218C250B006DDA24 /* FactoryPatternExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactoryPatternExampleUITests.m; sourceTree = "<group>"; };
 		5E5A8E5E218C250B006DDA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E5A8E6A218C3F0C006DDA24 /* CalculstotFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculstotFactory.h; sourceTree = "<group>"; };
 		5E5A8E6B218C3F6A006DDA24 /* Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Add.h; sourceTree = "<group>"; };
 		5E5A8E6C218C3FF7006DDA24 /* Sub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sub.h; sourceTree = "<group>"; };
+		5E5A8E6D218C4193006DDA24 /* calculatorFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calculatorFactory.m; sourceTree = "<group>"; };
+		5E5A8E70218C4397006DDA24 /* Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Add.m; sourceTree = "<group>"; };
+		5E5A8E72218C43CA006DDA24 /* Sub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sub.m; sourceTree = "<group>"; };
+		5E5A8E74218C440C006DDA24 /* CalculatorFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorFactory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +119,12 @@
 				5E5A8E43218C250B006DDA24 /* LaunchScreen.storyboard */,
 				5E5A8E46218C250B006DDA24 /* Info.plist */,
 				5E5A8E47218C250B006DDA24 /* main.m */,
-				5E5A8E6A218C3F0C006DDA24 /* CalculstotFactory.h */,
 				5E5A8E6B218C3F6A006DDA24 /* Add.h */,
 				5E5A8E6C218C3FF7006DDA24 /* Sub.h */,
+				5E5A8E6D218C4193006DDA24 /* calculatorFactory.m */,
+				5E5A8E70218C4397006DDA24 /* Add.m */,
+				5E5A8E72218C43CA006DDA24 /* Sub.m */,
+				5E5A8E74218C440C006DDA24 /* CalculatorFactory.h */,
 			);
 			path = FactoryPatternExample;
 			sourceTree = "<group>";
@@ -268,8 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5A8E73218C43CA006DDA24 /* Sub.m in Sources */,
+				5E5A8E6E218C4193006DDA24 /* calculatorFactory.m in Sources */,
 				5E5A8E3D218C250B006DDA24 /* ViewController.m in Sources */,
 				5E5A8E48218C250B006DDA24 /* main.m in Sources */,
+				5E5A8E71218C4397006DDA24 /* Add.m in Sources */,
 				5E5A8E3A218C250B006DDA24 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,13 +454,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5QJ3EL39MW;
 				INFOPLIST_FILE = FactoryPatternExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.FactoryPatternExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,13 +472,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5QJ3EL39MW;
 				INFOPLIST_FILE = FactoryPatternExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.FactoryPatternExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

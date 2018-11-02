@@ -1,5 +1,5 @@
 //
-//  CalculstotFactory.h
+//  CalculatorFactory.h
 //  FactoryPatternExample
 //
 //  Created by TianYan_AppTeam_TBL on 2018/11/2.
@@ -8,5 +8,5 @@
 #import <Foundation/Foundation.h>
 #import <objc/message.h>
 @interface CalculatorFactory:NSObject
-+(Calculator*)calculatorFactory:(NSString*)operation;
++(CalculatorFactory*)calculatorFactory:(NSString*)operation;
 @end
