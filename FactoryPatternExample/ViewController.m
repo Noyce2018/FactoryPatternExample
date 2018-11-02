@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"load");
+    NSLog(@"load tbl");
     // Do any additional setup after loading the view, typically from a nib.
 }
 
