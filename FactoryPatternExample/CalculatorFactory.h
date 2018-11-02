@@ -9,4 +9,5 @@
 #import <objc/message.h>
 @interface CalculatorFactory:NSObject
 +(CalculatorFactory*)calculatorFactory:(NSString*)operation;
+-(int)getResult:(int)x:(int)y;
 @end

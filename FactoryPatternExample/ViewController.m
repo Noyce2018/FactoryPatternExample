@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //类簇
+    printf("%d\n",[[CalculatorFactory calculatorFactory:@"+"] getResult:1:1]);
+    printf("%d\n",[[CalculatorFactory calculatorFactory:@"-"] getResult:1:1]);
     // Do any additional setup after loading the view, typically from a nib.
 }
 

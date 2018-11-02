@@ -9,20 +9,15 @@
 #import "Add.h"
 #import "Sub.h"
 @implementation CalculatorFactory
-+(CalculatorFactory*)calculatorFactory:(char)operation
++(CalculatorFactory*)calculatorFactory:(NSString *)operation
 {
-    switch (operation)
-    {
-        case '+':
-            return [[Add alloc]init];
-            break;
-        case '-':
-            return [[Sub alloc]init];
-            break;
-        default:
-            return [[Add alloc]init];
-            break;
+    if(operation==@"+"){
+        return [[Add alloc]init];
     }
+    if(operation==@"-"){
+       return [[Sub alloc]init];
+    }
+    return [[Add alloc]init];
     
 }
 @end
