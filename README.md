@@ -1,0 +1,2 @@
+# FactoryPatternExample
+解释设计模式中工厂模式的示例程序，开发语言为Objectiva-C语言
